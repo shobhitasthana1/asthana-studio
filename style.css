@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    width: 100%;
+    height: 100%;
+}
+
+main{
+    position: relative;
+    background-color: black;
+}
+
+#loader{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #0b0b0b;
+    z-index: 9999;
+}
+
+#page1{
+    width: 100%;
+    height: 100vh;
+    background-color: #151515;
+}
