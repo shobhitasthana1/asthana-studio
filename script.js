@@ -1,4 +1,7 @@
-const tl = gsap.timeline();
+// LOADING ANIMATION 
+
+function loadingAnimation(){
+    const tl = gsap.timeline();
 
 tl.from(".line h1, .line h2, .line1-part1 h5, .line1-part1 h6", {
     y: 120,
@@ -43,3 +46,6 @@ tl.from("#page1",{
     y: 1200,
     opacity: 0,
 })
+}
+
+// loadingAnimation();

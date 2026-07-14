@@ -46,6 +46,8 @@ main {
     /* background: #050505; */
 }
 
+/* LOADING ANIMATION  */
+
 
 #loader {
     width: 100%;
@@ -179,4 +181,57 @@ main {
     min-height: 100vh;
     background: #050505;
     border-top: 2px solid rgb(14, 14, 14);
+}
+
+
+#nav {
+    width: 100%;
+    padding: clamp(16px, 2vw, 28px) clamp(20px, 4vw, 48px);
+
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo img {
+    width: clamp(120px, 10vw, 180px);
+    height: auto;
+    display: block;
+}
+
+#nav-part4 {
+    display: flex;
+    gap: clamp(16px, 3vw, 48px);
+}
+
+#nav-part2 h4 {
+    font-family: "Geist";
+    font-weight: 300;
+    font-size: clamp(14px, 1.2vw, 20px);
+    line-height: 1;
+    cursor: pointer;
+}
+
+#nav-part4 h4 {
+    font-family: "Saira Stencil";
+    font-size: clamp(15px, 1.4vw, 22px);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#page1 #hero {
+    width: min(69%, 1200px);
+    margin-left: 31%;
+}
+
+#hero-section {
+    overflow: hidden;
+    margin-top: clamp(40px, 8vh, 90px);
+}
+
+#hero h1 {
+    font-size: clamp(52px, 6vw, 120px);
+    line-height: .95;
+    letter-spacing: -.02em;
+    font-weight: 800;
+    text-transform: uppercase;
 }
