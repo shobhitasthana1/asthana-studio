@@ -1,51 +1,114 @@
-// LOADING ANIMATION 
+// locomotive 
 
-function loadingAnimation(){
-    const tl = gsap.timeline();
-
-tl.from(".line h1, .line h2, .line1-part1 h5, .line1-part1 h6", {
-    y: 120,
-    opacity: 0,
-    stagger: 0.15,
-    duration: 0.7,
-    delay: 0.5,
-    ease: "power3.out",
+const scroll = new LocomotiveScroll({
+    el: document.querySelector("main"),
+    smooth: true
 });
 
-tl.from(".line1-part1 h5", {
-    duration: 0.1,
-    onStart: () => {
-        const counter = document.querySelector(".line1-part1 h5");
 
-        let value = 0;
 
-        const interval = setInterval(() => {
-            counter.textContent = String(value).padStart(2, "0");
+// CURSON 
 
-            value++;
-
-            if (value > 100) {
-                clearInterval(interval);
-            }
-        }, 30);
-    },
+function cursonAnimation(){
+    document.addEventListener("mousemove", function(dets){
+gsap.to("#crsr", {
+    left: dets.x,
+    top: dets.y
 });
-
-tl.to("#loader", {
-    opacity: 0,
-    duration: 1,
-    delay: 4,
-    ease: "power2.inOut",
-});
-
-tl.set("#loader", {
-    display: "none",
-});
-
-tl.from("#page1",{
-    y: 1200,
-    opacity: 0,
 })
+
+Shery.makeMagnet("#nav-part4 h4, #nav-part2 h4", {
+  //Parameters are optional.
+  ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+  duration: 1,
+});
+
+Shery.mouseFollower({
+  //Parameters are optional.
+  skew: true,
+  ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+  duration: 1,
+  transform: "translate(-50%, -50%)"
+});
 }
 
-// loadingAnimation();
+cursonAnimation();
+
+function page1Animation() {
+
+    const tl = gsap.timeline();
+
+    // Loader Text
+    tl.from(".line h1, .line h2, .line1-part1 h5, .line1-part1 h6", {
+        y: 120,
+        opacity: 0,
+        stagger: 0.12,
+        duration: 0.8,
+        delay: 0.4,
+        ease: "power4.out"
+    });
+
+    // Counter
+    tl.from(".line1-part1 h5", {
+        duration: 0.1,
+        onStart: () => {
+            const counter = document.querySelector(".line1-part1 h5");
+
+            let value = 0;
+
+            const interval = setInterval(() => {
+                counter.textContent = String(value).padStart(2, "0");
+                value++;
+
+                if (value > 100) clearInterval(interval);
+            }, 28);
+        }
+    }, "<");
+
+    // Loader Exit
+    tl.to("#loader", {
+        opacity: 0,
+        scale: 1.05,
+        duration: 0.2,
+        ease: "power3.inOut"
+    }, "+=3");
+
+    tl.set("#loader", {
+        display: "none"
+    });
+
+    // Page Reveal
+    tl.from("#page1", {
+        yPercent: 100,
+        duration: 1.2,
+        ease: "expo.out"
+    });
+
+    // Navbar
+    tl.from("#nav", {
+        y: -80,
+        opacity: 0,
+        duration: 0.8,
+        ease: "power4.out"
+    }, "-=0.8");
+
+    // Hero Lines
+    tl.from("#hero-section #hero", {
+        y: 80,
+        opacity: 0,
+        stagger: 0.18,
+        duration: 0.8,
+        ease: "power4.out"
+    }, "-=0.45");
+
+    // Optional: Fade in other elements
+    tl.from("#hero-section p, #hero-section button", {
+        y: 30,
+        opacity: 0,
+        stagger: 0.15,
+        duration: 0.6,
+        ease: "power2.out"
+    }, "-=0.4");
+}
+
+page1Animation();

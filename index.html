@@ -9,13 +9,15 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-
+    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" /> <!--(Shery Js) Recommended -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- <div id="loader">
+    <div id="crsr"></div>
+
+    <div id="loader">
         <div class="line">
             <div class="line1-part1">
                 <h5>00</h5>
@@ -32,7 +34,7 @@
             <h1>NEXT DIGITAL -</h1>
             <h2>EXPERIENCE.</h2>
         </div>
-    </div> -->
+    </div>
 
 
     <main>
@@ -69,8 +71,10 @@
             <div id="hero">
                 <h1>INTERACTIVE</h1>
             </div>
-            <div id="hero">
-                <h1>WEB & APP</h1>
+            <div class="hero3" id="hero">
+                <h1>WEB</h1>
+                <h1>&</h1>
+                <h1>APP</h1>
             </div>
             <div id="hero">
                 <h1>EXPERIENCES.</h1>
@@ -83,17 +87,18 @@
         <section id="page2"></section>
         <section id="page3"></section>
     </main>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css">
 
-    <!-- GSAP  -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.15.0/gsap.min.js"
-        integrity="sha512-Qrpii3NEFZ02RN6ZqpTu6pS/5PEq7EzBYJLki3AKBd8IncrlAwQdZHzExYwS0+b1NM0/qfxI1GOhqWLVosocDA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- GSAP SCROLLTRIGGER  -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.15.0/ScrollTrigger.min.js"
-        integrity="sha512-HemPoJ+m4KR4XM3VY+N58XFYN7qdXuR0elHeVYGJBJ6LYC+xoeHodEpwiN5JxXLyvA+sRd7/FJ6w6lz5IkANNQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
 
+<!--  Gsap is needed for Basic Effects -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 
+<!-- Scroll Trigger is needed for Scroll Effects -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+<!-- Shery js  -->
+<script  type="text/javascript"  src="https://unpkg.com/sheryjs/dist/Shery.js"></script> <!-- Recommended -->
     <script src="script.js"></script>
 </body>
 
