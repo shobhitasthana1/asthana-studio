@@ -39,15 +39,18 @@ body {
     height: 100%;
     font-family: "Geist", sans-serif;
     background: #050505;
+    /* Yeh lo fix! overflow-x: hidden lagane se page ke bahar nikalne wale elements chip jayenge aur bottom scroll bar nahi aayega */
+    overflow-x: hidden;
 }
 
 main {
     position: relative;
     /* background: #050505; */
+    /* Ek extra safety layer taaki main container se kuch bahar na nikle */
+    overflow: hidden;
 }
 
 /* cursor  */
-
 #crsr {
     width: 2vw;
     height: 2vw;
@@ -55,7 +58,8 @@ main {
     background-color: #020202;
     border: 3px solid whitesmoke;
 
-    position: fixed;   /* absolute -> fixed */
+    position: fixed;
+    /* absolute -> fixed */
 
     top: 0;
     left: 0;
@@ -67,8 +71,6 @@ main {
 }
 
 /* LOADING ANIMATION  */
-
-
 #loader {
     width: 100%;
     height: 100vh;
@@ -111,8 +113,6 @@ main {
     min-width: 220px;
 }
 
-
-
 .line1-part1 h5,
 .line1-part1 h6 {
     font-family: "Geist";
@@ -129,22 +129,15 @@ main {
     text-align: right;
 }
 
-
 #loader h1 {
     font-size: clamp(3.5rem, 6vw, 7rem);
     line-height: .95;
     letter-spacing: -.04em;
     text-transform: uppercase;
-
     color: #f5f5f5;
-
     font-weight: 900;
-
-    text-shadow:
-        0 0 25px rgba(255, 255, 255, .04);
+    text-shadow: 0 0 25px rgba(255, 255, 255, .04);
 }
-
-
 
 .line3 h2 {
     width: fit-content;
@@ -153,52 +146,47 @@ main {
     font-family: "Geist";
     font-style: italic;
     font-size: clamp(3rem, 5.6vw, 6rem);
-
     color: transparent;
     -webkit-text-stroke: 1px rgba(255, 255, 255, .92);
-
     line-height: .95;
     letter-spacing: -.03em;
     font-weight: 700;
-
     animation: loaderTextAnimation 3s 2s infinite steps(1, end);
 }
 
 @keyframes loaderTextAnimation {
 
     0%,
-    33% {
+    25% {
         -webkit-text-stroke: 1px rgba(255, 255, 255, .92);
     }
 
-    34%,
-    66% {
+    26%,
+    50% {
+        -webkit-text-stroke: 1px rgba(153, 114, 114, 0.92);
+    }
+
+    51%,
+    75% {
         -webkit-text-stroke: 1px rgba(193, 188, 208, 0.92);
     }
 
-    67%,
+    76%,
     100% {
         -webkit-text-stroke: 1px rgba(174, 162, 162, 0.92);
     }
 }
 
-
 #loader::before {
     content: "";
     position: absolute;
-
     left: -30%;
     bottom: 14%;
-
     width: 170%;
     height: 1px;
-
     background: rgba(255, 255, 255, .05);
-
     transform: rotate(23deg);
 }
-
-
 
 #page1 {
     width: 100%;
@@ -210,7 +198,6 @@ main {
 #nav {
     width: 100%;
     padding: clamp(16px, 2vw, 28px) clamp(20px, 4vw, 48px);
-
     display: flex;
     justify-content: space-between;
 }
@@ -257,11 +244,9 @@ main {
     letter-spacing: -.02em;
     font-weight: 800;
     text-transform: uppercase;
-
     transition: color .45s ease,
         -webkit-text-stroke-color .45s ease,
         transform .45s cubic-bezier(.23, 1, .32, 1);
-
     will-change: transform;
 }
 
@@ -285,11 +270,9 @@ main {
     font-family: "Saira Stencil";
     color: #090909;
     -webkit-text-stroke: 1px #fff;
-
     transition: color .45s ease,
         transform .45s cubic-bezier(.23, 1, .32, 1),
         text-shadow .45s ease;
-
     will-change: transform;
 }
 
@@ -299,10 +282,8 @@ main {
     text-shadow: 0 0 25px rgba(255, 255, 255, .25);
 }
 
-
 /* PAGE 2 */
-
-#page2{
+#page2 {
     width: 100%;
     min-height: 100vh;
     background: #050505;
@@ -310,7 +291,7 @@ main {
     padding: 8vw 0;
 }
 
-#video-cursor{
+#video-cursor {
     width: 8vw;
     height: 8vw;
     background: conic-gradient(rgb(0, 0, 0), rgb(36, 35, 35));
@@ -325,14 +306,14 @@ main {
     align-items: center;
 }
 
-#video-cursor i{
+#video-cursor i {
     background: linear-gradient(rgb(43, 39, 39), rgb(0, 0, 0));
     border-radius: 50%;
     font-size: 3vw;
     z-index: 5;
 }
 
-#page2-container{
+#page2-container {
     width: 69%;
     margin-left: 31%;
     aspect-ratio: 19 / 9;
@@ -340,37 +321,163 @@ main {
     border-radius: 12px;
 }
 
-#page2-container video{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    display:block;
+#page2-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
-#page2-container img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    display:block;
+#page2-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
     position: absolute;
 }
 
-
-
 /* PAGE 3  */
-
-
-
-
 #page3 {
     width: 100%;
     min-height: 100vh;
-    background: #241b1b;
+    background: #050505;
 }
 
+/* page4 */
 
 #page4 {
     width: 100%;
     min-height: 100vh;
     background: #050505;
+}
+
+#page4-content {
+    /* Maine width ko 72vw se 72% kar diya hai kyu ki jab tum 72vw aur 28% margin add karte the toh vertical scrollbar ke extra space ki wajah se horizontally 100% exceed ho jata tha */
+    width: 72%;
+    margin-left: 28%;
+    position: relative;
+}
+
+#page4-content h1 span {
+    font-family: "Saira Stencil";
+    font-size: clamp(30px, 5vw, 120px);
+    line-height: .95;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #090909;
+    -webkit-text-stroke: 1px #fff;
+}
+
+#page4-content h1 {
+    font-family: "Geist";
+    font-size: clamp(30px, 4.5vw, 120px);
+}
+
+#page4 .underline {
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    margin: 5vw 0;
+}
+
+#page4-content>p {
+    font-family: "Geist";
+    font-size: clamp(25px, 3.5vh, 60px);
+    width: 50%;
+    letter-spacing: 2px;
+    margin-bottom: 6vh;
+}
+
+#page4-flex {
+    display: flex;
+}
+
+#page4-flex img {
+    width: 50%;
+}
+
+#page4-flex p {
+    width: 30%;
+    font-family: "Geist";
+    font-size: clamp(15px, 2vh, 50px);
+    letter-spacing: 2px;
+    margin-left: 5vh;
+}
+
+#page4 #blue-box {
+    width: 36vw;
+    padding: 2.5vw;
+
+    background: conic-gradient(#0000001b 0%, #191a1d2e 100%);
+    border: 1px solid rgba(255, 255, 255, .08);
+    border-radius: 14px;
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, .35),
+        inset 0 1px rgba(255, 255, 255, .05);
+
+    backdrop-filter: blur(10px);
+
+    position: absolute;
+
+
+    top: 83%;
+    right: 10%;
+
+    z-index: 99;
+}
+
+#page4 .blue-box-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    gap: 3vw;
+    padding: 1.6vw 0;
+
+    border-bottom: 1px solid rgba(255, 255, 255, .12);
+}
+
+#page4 .blue-box-content:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+#page4 .blue-box-content:first-child {
+    padding-top: 0;
+}
+
+#page4 .blue-box-content h4 {
+    width: 45%;
+
+    font-size: 1.35vw;
+    font-weight: 500;
+    letter-spacing: -.02em;
+
+    color: #fff;
+
+    font-family: "Geist", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#page4 .blue-box-content p {
+    width: 50%;
+
+    font-size: .95vw;
+    line-height: 1.6;
+    font-weight: 300;
+
+    color: rgba(255, 255, 255, .75);
+}
+
+#page5 {
+    width: 100%;
+    min-height: 100vh;
+    background: #050505;
+}
+
+.underline2 {
+    height: 2px;
+    width: 70%;
+    background-color: white;
+    margin-top: 25vw;
 }

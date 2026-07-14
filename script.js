@@ -77,9 +77,9 @@ function page1Animation() {
 
     // Navbar
     tl.from("#nav", {
-        y: -80,
+        y: -200,
         opacity: 0,
-        duration: 0.8,
+        duration: 1,
         ease: "power4.out"
     }, "-=0.8");
 
@@ -88,7 +88,7 @@ function page1Animation() {
         y: 80,
         opacity: 0,
         stagger: 0.18,
-        duration: 0.8,
+        duration: 1,
         ease: "power4.out"
     }, "-=0.45");
 
