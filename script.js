@@ -1,12 +1,3 @@
-// locomotive 
-
-const scroll = new LocomotiveScroll({
-    el: document.querySelector("main"),
-    smooth: true
-});
-
-
-
 // CURSON 
 
 function cursonAnimation(){
@@ -93,7 +84,7 @@ function page1Animation() {
     }, "-=0.8");
 
     // Hero Lines
-    tl.from("#hero-section #hero", {
+    tl.from("#hero-section .hero", {
         y: 80,
         opacity: 0,
         stagger: 0.18,
@@ -101,7 +92,6 @@ function page1Animation() {
         ease: "power4.out"
     }, "-=0.45");
 
-    // Optional: Fade in other elements
     tl.from("#hero-section p, #hero-section button", {
         y: 30,
         opacity: 0,
@@ -109,6 +99,21 @@ function page1Animation() {
         duration: 0.6,
         ease: "power2.out"
     }, "-=0.4");
+
+    // logo animation 
+
+  Shery.hoverWithMediaCircle("#logo", {
+    images: [
+        "./image/logo-1.webp",
+        "./image/logo-2.webp",
+        "./image/logo-3.webp"
+    ],
+    scale: 1.2,
+    duration: 1,
+    ease: "cubic-bezier(0.23, 1, 0.320, 1)"
+});
+
 }
 
 page1Animation();
+

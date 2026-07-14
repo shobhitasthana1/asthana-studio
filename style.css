@@ -197,6 +197,15 @@ main {
     border-top: 2px solid rgb(14, 14, 14);
 }
 
+#page2{
+    height:100vh;
+    background:red;
+}
+
+#page3{
+    height:100vh;
+    background:blue;
+}
 
 #nav {
     width: 100%;
@@ -232,7 +241,7 @@ main {
     cursor: pointer;
 }
 
-#page1 #hero {
+#page1 .hero {
     width: min(69%, 1200px);
     margin-left: 31%;
 }
@@ -242,26 +251,50 @@ main {
     margin-top: clamp(40px, 8vh, 90px);
 }
 
-#hero h1 {
+.hero h1{
     font-size: clamp(52px, 6vw, 120px);
     line-height: .95;
     letter-spacing: -.02em;
     font-weight: 800;
     text-transform: uppercase;
+
+    transition: color .45s ease,
+                -webkit-text-stroke-color .45s ease,
+                transform .45s cubic-bezier(.23,1,.32,1);
+
+    will-change: transform;
 }
 
-.hero3{
+.hero h1:hover{
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    transform: translateX(10px);
+}
+
+#hero3{
     display: flex;
     gap: 25px;
     width: 100%;
 }
 
-.hero3 h1 {
+#hero3 h1{
     font-size: clamp(52px, 6vw, 120px);
     line-height: .95;
     font-weight: 800;
     text-transform: uppercase;
     font-family: "Saira Stencil";
     color: #090909;
-    -webkit-text-stroke: 2px white;
+    -webkit-text-stroke: 1px #fff;
+
+    transition: color .45s ease,
+                transform .45s cubic-bezier(.23,1,.32,1),
+                text-shadow .45s ease;
+
+    will-change: transform;
+}
+
+#hero3 h1:hover{
+    color: #fff;
+    transform: translateY(-6px);
+    text-shadow: 0 0 25px rgba(255,255,255,.25);
 }
