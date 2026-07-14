@@ -115,5 +115,5 @@ function page1Animation() {
 
 }
 
-page1Animation();
+// page1Animation();
 
