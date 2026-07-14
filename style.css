@@ -54,8 +54,14 @@ main {
     border-radius: 50%;
     background-color: #020202;
     border: 3px solid whitesmoke;
-    position: absolute;
-    z-index: 1000;
+
+    position: fixed;   /* absolute -> fixed */
+
+    top: 0;
+    left: 0;
+
+    z-index: 99999;
+    pointer-events: none;
     mix-blend-mode: difference;
     transform: translate(-50%, -50%);
 }
@@ -199,12 +205,6 @@ main {
     min-height: 100vh;
     background: #050505;
     border-top: 2px solid rgb(14, 14, 14);
-}
-
-
-#page3 {
-    height: 100vh;
-    background: rgb(52, 52, 56);
 }
 
 #nav {
@@ -353,4 +353,24 @@ main {
     object-fit:cover;
     display:block;
     position: absolute;
+}
+
+
+
+/* PAGE 3  */
+
+
+
+
+#page3 {
+    width: 100%;
+    min-height: 100vh;
+    background: #241b1b;
+}
+
+
+#page4 {
+    width: 100%;
+    min-height: 100vh;
+    background: #050505;
 }
