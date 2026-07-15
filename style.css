@@ -190,7 +190,7 @@ main {
 
 #page1 {
     width: 100%;
-    min-height: 100vh;
+    max-height: 100vh;
     background: #050505;
     border-top: 2px solid rgb(14, 14, 14);
 }
@@ -285,7 +285,7 @@ main {
 /* PAGE 2 */
 #page2 {
     width: 100%;
-    min-height: 100vh;
+    height: fit-content;
     background: #050505;
     position: relative;
     padding: 8vw 0;
@@ -473,13 +473,13 @@ main {
 
 #page5 {
     width: 100%;
-    min-height: 100vh;
+    height: fit-content;
     background: #050505;
     position: relative;
     display: flex;
     flex-direction: column;
     gap: 1.5vw;
-    overflow: hidden; 
+    overflow: hidden;
 }
 
 .underline2 {
@@ -489,7 +489,7 @@ main {
     margin-top: 25vw;
 }
 
-#page5 .elem, 
+#page5 .elem,
 #page5 .elem2 {
     display: flex;
     align-items: center;
@@ -505,10 +505,11 @@ main {
     font-family: "Saira Stencil", sans-serif;
     font-size: 7vw;
     line-height: 1;
-    padding-right: 1.5vw; 
+    padding-right: 1.5vw;
     color: transparent;
     -webkit-text-stroke: 2px #fff;
     will-change: transform;
+    font-style: italic;
 }
 
 #page5 .elem h1 span,
@@ -518,7 +519,7 @@ main {
     font-family: "Saira Stencil", sans-serif;
     font-size: 7vw;
     line-height: 1;
-    padding-right: 1.5vw; 
+    padding-right: 1.5vw;
     color: rgba(255, 255, 255, 0.036);
     -webkit-text-stroke: 2px #d5ccda;
     will-change: transform;
@@ -536,6 +537,7 @@ main {
     0% {
         transform: translateX(0);
     }
+
     100% {
         transform: translateX(-100%);
     }
@@ -545,7 +547,129 @@ main {
     0% {
         transform: translateX(-100%);
     }
+
     100% {
         transform: translateX(0);
     }
 }
+
+/* page6 */
+
+#page6 {
+    width: 100%;
+    min-height: 100vh;
+    background: #050505;
+    color: #ffffff;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    width: 72%;
+    margin-left: 28%;
+    position: relative;
+    padding: 2vw 4vw 3vw 0;
+    box-sizing: border-box;
+}
+
+.underline {
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    margin: 5vw 0;
+}
+
+.underline-bottom {
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    margin: 1vw 0;
+}
+
+.footer-cta {
+    margin: 4vw 0;
+}
+
+footer h1 {
+    font-family: "Geist", sans-serif;
+    font-size: clamp(32px, 6vw, 110px);
+    line-height: 0.95;
+    font-weight: 800;
+    margin: 0;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+footer h1 span {
+    font-family: "Saira Stencil", sans-serif;
+    font-weight: 800;
+    color: #050505;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.9);
+}
+
+footer h1 i {
+    font-size: clamp(30px, 5.5vw, 105px);
+    color: #050505 !important;
+    -webkit-text-fill-color: #050505;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.9);
+    display: inline-block;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.footer-cta:hover h1 i {
+    transform: translateX(15px);
+}
+
+#footer-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2vw;
+    margin: 4vw 0 6vw 0;
+}
+
+.footer-col h6 {
+    font-family: "Saira Stencil", sans-serif;
+    font-size: clamp(16px, 1.5vw, 24px);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: rgba(255, 255, 255, 0.5);
+    margin: 0 0 2vw 0;
+    font-weight: 400;
+}
+
+.footer-col p, 
+.footer-links a, 
+.email-link {
+    font-family: "Geist", sans-serif;
+    font-size: clamp(14px, 1vw, 18px);
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.6;
+    font-weight: 300;
+    margin: 0 0 0.8vh 0;
+    text-decoration: none;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover, 
+.email-link:hover {
+    color: #ffffff;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1vw;
+}
+
+.footer-bottom p {
+    font-family: "Geist", sans-serif;
+    font-size: clamp(12px, 0.9vw, 15px);
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 300;
+    margin: 0;
+}
+
