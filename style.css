@@ -350,11 +350,151 @@ main {
 }
 
 /* PAGE 3  */
+
 #page3 {
     width: 100%;
     min-height: 100vh;
     background: #050505;
+    margin: 5vw;
 }
+
+#page3 h1 span {
+    font-family: "Saira Stencil";
+    font-size: clamp(30px, 5vw, 120px);
+    line-height: .95;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #090909;
+    -webkit-text-stroke: 1px #fff;
+}
+
+#page3 h1 {
+    font-family: "Geist";
+    font-size: clamp(30px, 4.5vw, 120px);
+    position: relative;
+    margin-left: 8vw;
+}
+
+#page3 h1::before {
+    content: "02";
+    position: absolute;
+    left: -8%;
+    top: -5%;
+    font-family: "Saira Stencil", sans-serif;
+    font-weight: 800;
+    color: #050505;
+    -webkit-text-stroke: 1px rgba(171, 164, 185, 0.9);
+    font-size: clamp(25px, 5vw, 80px);
+    font-style: italic;
+}
+
+#page3 .underline {
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    margin: 5vw 0;
+}
+
+#page3 #image-container {
+    width: 100%;
+    /* background-color: rebeccapurple; */
+    padding: 5vw;
+}
+
+#image-container .image-box {
+    width: 24vw;
+    height: 33vw;
+    border: 1px dotted white;
+    background-color: #090909;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#image-container .image-box img {
+    width: 100%;
+    height: 100;
+    object-fit: cover;
+    /* background-color: yellow; */
+}
+
+/* /* ._canvas_container{
+    z-index: 999999 !important;
+} */
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* page4 */
 
@@ -394,7 +534,7 @@ main {
     font-family: "Saira Stencil", sans-serif;
     font-weight: 800;
     color: #050505;
-     -webkit-text-stroke: 1px rgba(171, 164, 185, 0.9);
+    -webkit-text-stroke: 1px rgba(171, 164, 185, 0.9);
     font-size: clamp(25px, 5vw, 80px);
     font-style: italic;
 }
@@ -636,7 +776,7 @@ footer h1::before {
     font-family: "Saira Stencil", sans-serif;
     font-weight: 800;
     color: #050505;
-     -webkit-text-stroke: 1px rgba(171, 164, 185, 0.9);
+    -webkit-text-stroke: 1px rgba(171, 164, 185, 0.9);
     font-size: clamp(25px, 5vw, 80px);
     font-style: italic;
 }
