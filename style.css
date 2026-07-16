@@ -417,10 +417,11 @@ main {
     /* background-color: yellow; */
 }
 
-/* /* ._canvas_container{
-    z-index: 999999 !important;
-} */
- */
+
+._canvas_container{
+    z-index: 9996999 !important;
+} 
+
 
 
 
