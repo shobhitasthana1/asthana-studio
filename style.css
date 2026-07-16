@@ -234,8 +234,21 @@ main {
 }
 
 #hero-section {
-    overflow: hidden;
     margin-top: clamp(40px, 8vh, 90px);
+    position: relative;
+}
+
+#page1 #hero-section::before {
+    content: "01";
+    position: absolute;
+    left: 20%;
+    top: -5%;
+    font-family: "Saira Stencil", sans-serif;
+    font-weight: 800;
+    color: #050505;
+    -webkit-text-stroke: 1px rgba(171, 164, 185, 0.9);
+    font-size: clamp(25px, 5vw, 80px);
+    font-style: italic;
 }
 
 .hero h1 {
@@ -371,6 +384,19 @@ main {
 #page4-content h1 {
     font-family: "Geist";
     font-size: clamp(30px, 4.5vw, 120px);
+}
+
+#page4-content h1::before {
+    content: "03";
+    position: absolute;
+    left: -15%;
+    top: -2%;
+    font-family: "Saira Stencil", sans-serif;
+    font-weight: 800;
+    color: #050505;
+     -webkit-text-stroke: 1px rgba(171, 164, 185, 0.9);
+    font-size: clamp(25px, 5vw, 80px);
+    font-style: italic;
 }
 
 #page4 .underline {
@@ -600,6 +626,19 @@ footer h1 {
     letter-spacing: -0.03em;
     text-transform: uppercase;
     font-weight: 700;
+    position: relative;
+}
+
+footer h1::before {
+    content: "04";
+    position: absolute;
+    left: -15%;
+    font-family: "Saira Stencil", sans-serif;
+    font-weight: 800;
+    color: #050505;
+     -webkit-text-stroke: 1px rgba(171, 164, 185, 0.9);
+    font-size: clamp(25px, 5vw, 80px);
+    font-style: italic;
 }
 
 footer h1 span {
@@ -639,8 +678,8 @@ footer h1 i {
     font-weight: 400;
 }
 
-.footer-col p, 
-.footer-links a, 
+.footer-col p,
+.footer-links a,
 .email-link {
     font-family: "Geist", sans-serif;
     font-size: clamp(14px, 1vw, 18px);
@@ -653,7 +692,7 @@ footer h1 i {
     transition: color 0.3s ease;
 }
 
-.footer-links a:hover, 
+.footer-links a:hover,
 .email-link:hover {
     color: #ffffff;
 }
@@ -672,4 +711,3 @@ footer h1 i {
     font-weight: 300;
     margin: 0;
 }
-
