@@ -12,10 +12,12 @@ const data = [
 
 const Stripes = () => {
   return (
-    <div className='flex flex-wrap justify-center items-center w-full mt-5'>
-      {data.map((elem, idx) => {
-        return <Stripe key={idx} val={elem} />;
-      })}
+    <div className='w-full px-4 md:px-6'>
+      <div className='max-w-7xl mx-auto flex flex-wrap items-center border-t border-l border-slate-700/60 rounded-xl overflow-hidden shadow-2xl'>
+        {data.map((elem, idx) => {
+          return <Stripe key={idx} val={elem} />;
+        })}
+      </div>
     </div>
   );
 };
