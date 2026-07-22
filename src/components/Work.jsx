@@ -71,7 +71,7 @@ const images = [
       <div className='relative max-w-7xl mx-auto flex items-center justify-center'>
         <h1 className='text font-impasse text-[22vw] font-black select-none'>WORK</h1>
         <div className='w-full h-full absolute'>{images.map((img, idx) => (img.isActive && ( <img
-              className="w-50 absolute rounded-b-lg -translate-x-1/2 -translate-y-1/2"
+              className="w-50 absolute rounded-b-lg -translate-x-1/2 -translate-y-1/2 rounded-md"
               src={img.url}
               style={{ top: img.top, left: img.left }}
               alt=""

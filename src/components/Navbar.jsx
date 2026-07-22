@@ -3,7 +3,7 @@ import Button from "./Button";
 
 const Navbar = () => {
     return (
-        <div className="bg-[#161418] max-w-7xl mx-auto px-6 py-6 flex items-center gap-20 justify-between border-b border-gray-800">
+        <div className="bg-[#161418] max-w-7xl mx-auto px-6 py-6 flex items-center gap-20 justify-between border-b border-slate-700">
         <div className="nav-left flex items-center gap-x-10">
                 <img src={Logo} alt="Logo" className="w-25 mr-10" />
 
@@ -13,12 +13,12 @@ const Navbar = () => {
                         return elem.length === 0 ? (
                             <span
                                 key={idx}
-                                className="w-0.5 h-6 bg-gray-800"
+                                className="w-0.5 h-6 bg-slate-700"
                             ></span>
                         ) : (
                             <a
                                 key={idx}
-                                className="text-sm flex items-center gap-2 font-mono font-satoshi"
+                                className="font-satoshi font-extralight text-sm flex items-center gap-2"
                                 href="#"
                             >
                                 {idx === 1 && (
