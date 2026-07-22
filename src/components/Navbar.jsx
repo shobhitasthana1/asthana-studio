@@ -18,7 +18,7 @@ const Navbar = () => {
                         ) : (
                             <a
                                 key={idx}
-                                className="text-sm flex items-center gap-2 font-mono"
+                                className="text-sm flex items-center gap-2 font-mono font-satoshi"
                                 href="#"
                             >
                                 {idx === 1 && (
