@@ -12,8 +12,9 @@ const data = [
 
 const Stripes = () => {
   return (
-    <div className='w-full px-4 md:px-6'>
-      <div className='max-w-7xl mx-auto flex flex-wrap items-center border-t border-l border-slate-700/60 rounded-xl overflow-hidden shadow-2xl'>
+    // Pura w-full kar diya aur margin/padding hata di edge-to-edge look ke liye
+    <div className='w-full'>
+      <div className='w-full flex flex-wrap items-center border-t border-slate-700/60 overflow-hidden shadow-2xl'>
         {data.map((elem, idx) => {
           return <Stripe key={idx} val={elem} />;
         })}

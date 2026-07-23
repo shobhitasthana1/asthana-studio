@@ -14,9 +14,10 @@ const Work = () => {
 
   return (
     <div className='w-full'>
-      <div className='relative max-w-7xl mx-auto flex items-center justify-center'>
+      {/* Added min-h-[180px] just for mobile to give images vertical breathing room */}
+      <div className='relative max-w-7xl mx-auto flex items-center justify-center min-h-[180px] md:min-h-[auto]'>
         
-        <h1 className='text font-impasse text-[22vw] font-black select-none text-white'>
+        <h1 className='text font-impasse text-[22vw] font-black select-none text-white tracking-wide'>
           WORK
         </h1>
         
@@ -25,10 +26,11 @@ const Work = () => {
             img.isActive && (
               <img
                 key={idx}
-                className="w-24 sm:w-32 md:w-44 xl:w-50 absolute rounded-md -translate-x-1/2 -translate-y-1/2"
+                // Scaled down significantly for mobile (w-12 and w-14) to prevent clustering
+                className="w-12 sm:w-20 md:w-32 xl:w-50 absolute rounded-md -translate-x-1/2 -translate-y-1/2 shadow-lg"
                 src={img.url}
                 style={{ top: img.top, left: img.left }}
-                alt=""
+                alt="Work Project"
               />
             )
           ))}
