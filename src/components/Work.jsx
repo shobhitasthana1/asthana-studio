@@ -23,7 +23,7 @@ const Work = () => {
 
   return (
     <div className="w-full">
-      <div className="relative max-w-7xl mx-auto flex items-center justify-center min-h-[180px] md:min-h-[auto]">
+      <div className="relative max-w-7xl mx-auto flex items-center justify-center min-h-45 md:min-h-auto">
         
         <h1 className="font-impasse text-[22vw] font-black select-none text-white tracking-wide">
           WORK
