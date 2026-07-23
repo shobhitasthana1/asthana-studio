@@ -14,14 +14,15 @@ const Product = ({ val }) => {
         </div>
 
         <div className="w-full md:w-1/2 lg:w-[40%] flex flex-col gap-6">
-          {/* Spelling theek kar di: description */}
+         
           <p className='font-satoshi text-slate-300 text-base md:text-lg leading-relaxed'>
             {val.description}
           </p>
           
-          <div className="w-max">
-            {/* Yahan par tum chaho toh val.button pass kar sakte ho agar Button component dynamic text support karta hai */}
-            <Button />
+          <div className="w-max flex gap-x-10">
+          
+            <Button text='Live Demo' />
+            <Button text='GitHub' />
           </div>
         </div>
 
