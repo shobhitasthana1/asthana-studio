@@ -3,6 +3,7 @@ import Navbar from './components/Navbar'
 import Work from './components/Work'
 import Stripes from './components/Stripes'
 import Products from './components/Products'
+import Marquee from "./components/Marquee";
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <Work />
       <Stripes />
       <Products />
+      <Marquee />
     </div>
   )
 }
