@@ -6,8 +6,11 @@ import Products from './components/Products'
 import Marquee from "./components/Marquee";
 import Cards from './components/Cards'
 import Footer from './components/Footer'
+import LocomotiveScroll from 'locomotive-scroll';
+
 
 const App = () => {
+  const scroll = new LocomotiveScroll();
   return (
     <div className='w-full min-h-screen text-white bg-[#161418] pb-5'>
       <Navbar />

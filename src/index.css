@@ -14,8 +14,6 @@
   font-style: normal;
 }
 
-/* Satoshi */
-
 @font-face {
   font-family: "Satoshi";
   src: url("./assets/fonts/Satoshi-Light.otf") format("opentype");
@@ -89,4 +87,45 @@
 @theme {
   --font-impasse: "Impasse", sans-serif;
   --font-satoshi: "Satoshi", sans-serif;
+  --color-studio-neon: #E2FF03;
+}
+
+@layer base {
+  body {
+    background-color: #0a0a0a;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-image: radial-gradient(circle at 50% -20%, rgba(37, 33, 41, 0.4) 0%, rgba(10, 10, 10, 1) 70%);
+  }
+
+  ::selection {
+    background-color: #E2FF03;
+    color: #000;
+  }
+}
+
+@keyframes floatAndGlow {
+  0%, 100% {
+    transform: translateY(0px);
+    filter: drop-shadow(0 0 0px rgba(226, 255, 3, 0));
+  }
+  50% {
+    transform: translateY(-8px);
+    filter: drop-shadow(0 10px 20px rgba(226, 255, 3, 0.15));
+  }
+}
+
+.animate-float-loop {
+  animation: floatAndGlow 4s ease-in-out infinite;
+}
+
+/* Hide scrollbar */
+::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
