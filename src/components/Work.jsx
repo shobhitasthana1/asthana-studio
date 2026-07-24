@@ -1,5 +1,5 @@
-import React from "react";
-
+import React, { useState } from "react";
+import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 import work1 from "../assets/images/work1.png";
 import work2 from "../assets/images/work2.png";
 import work3 from "../assets/images/work3.png";
@@ -10,7 +10,8 @@ import work7 from "../assets/images/work7.png";
 import work8 from "../assets/images/work8.png";
 
 const Work = () => {
-  const images = [
+
+  const [images, setimages] = useState([
     { url: work1, top: "28%", left: "32%", isActive: true },
     { url: work2, top: "36%", left: "68%", isActive: true },
     { url: work3, top: "52%", left: "24%", isActive: true },
@@ -19,12 +20,26 @@ const Work = () => {
     { url: work6, top: "70%", left: "62%", isActive: true },
     { url: work7, top: "22%", left: "50%", isActive: true },
     { url: work8, top: "45%", left: "82%", isActive: true },
-  ];
+  ]
+  )
+
+  const { scrollYProgress } = useScroll()
+
+  useMotionValueEvent(scrollYProgress, "change", (latest) => {
+     showHideImages(Math.floor(latest*100))
+  })
+
+  function showHideImages (scrollval){
+     console.log(scrollval)
+     if(scrollval >= 2){
+      console.log("Show first image")
+     }
+  }
 
   return (
     <div className="w-full">
       <div className="relative max-w-7xl mx-auto flex items-center justify-center min-h-45 md:min-h-auto">
-        
+
         <h1 className="font-impasse text-[22vw] font-black select-none text-white tracking-wide">
           WORK
         </h1>
