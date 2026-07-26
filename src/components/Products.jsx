@@ -26,7 +26,7 @@ const Products = () => {
         button: "View Project",
       },
       {
-        title: "FITrainingWithHarry",
+        title: "FITrainingWithShobhit",
         description:
           "Premium gym management platform featuring attendance tracking, workout plans, diet management, memberships, analytics, and an intuitive admin dashboard.",
         button: "View Project",
