@@ -6,7 +6,7 @@ const Product = ({ val, mover, count }) => {
     <div className="w-full text-white relative z-10 border-b border-slate-700/50">
       <div
         onMouseEnter={() => { mover(count) }}
-        className="max-w-7xl mx-auto px-4 md:px-8 py-10 md:py-0 md:h-[20rem] flex flex-col md:flex-row justify-between items-center gap-6 md:gap-0 transition-colors duration-300 hover:bg-white/5 rounded-xl group"
+        className="max-w-7xl mx-auto px-4 md:px-8 py-10 md:py-0 md:h-80 flex flex-col md:flex-row justify-between items-center gap-6 md:gap-0 transition-colors duration-300 hover:bg-white/5 rounded-xl group"
       >
         <div className="w-full md:w-[28%] transition-transform duration-300 group-hover:translate-x-2">
           <h1 className="font-impasse text-2xl md:text-2xl lg:text-3xl font-semibold tracking-wide drop-shadow-lg whitespace-pre-line leading-tight">
