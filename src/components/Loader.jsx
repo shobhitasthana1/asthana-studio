@@ -6,8 +6,8 @@ const Loader = () => {
     <motion.div
       // Exit animation jab loader gayab hoga
       exit={{ opacity: 0, y: -200 }}
-      transition={{ duration: 0.5, ease: [0.76, 0, 0.24, 1] }}
-      className="fixed inset-0 z-[99999] bg-[#161418] flex items-center justify-center flex-col gap-4"
+      transition={{ duration: 0.1, ease: [0.76, 0, 0.24, 1] }}
+      className="fixed inset-0 z-99999 bg-[#161418] flex items-center justify-center flex-col gap-4"
     >
       <div className="overflow-hidden">
         <motion.h1
@@ -22,13 +22,13 @@ const Loader = () => {
       
       {/* Sleek Progress Bar Line */}
       <motion.div 
-        className="w-40 md:w-64 h-[2px] bg-slate-800 rounded-full overflow-hidden mt-4"
+        className="w-40 md:w-64 h-0.5 bg-slate-800 rounded-full overflow-hidden mt-4"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.5 }}
       >
         <motion.div 
-          className="h-full bg-[#E2FF03]"
+          className="h-full bg-studio-neon"
           initial={{ width: "0%" }}
           animate={{ width: "100%" }}
           transition={{ duration: 1, ease: "easeInOut", delay: 1 }}

@@ -1,18 +1,15 @@
 import React, { useState } from "react";
 import Product from "./Product";
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 
-import work1 from "../assets/images/work1.png";
-import work2 from "../assets/images/work2.png";
-import work3 from "../assets/images/work3.png";
-import work4 from "../assets/images/work4.png";
-import work5 from "../assets/images/work5.png";
-import work6 from "../assets/images/work6.png";
-import work7 from "../assets/images/work7.png";
-import work8 from "../assets/images/work8.png";
+import video1 from "../assets/videos/video1.mov";
+import video2 from "../assets/videos/video2.mov";
+import video3 from "../assets/videos/video3.mov";
 
 const Products = () => {
-  const [pos, setPos] = useState(20);
+  const [active, setActive] = useState(0);
+
+  const videosList = [video1, video2, video3, video1];
 
   const sectionData = {
     heading: "Selected Work",
@@ -24,86 +21,65 @@ const Products = () => {
         description:
           "AI-powered career roadmap platform that helps students identify skill gaps, build personalized learning paths, and discover relevant opportunities using intelligent recommendations.",
         button: "View Project",
+        video: video1,
       },
       {
-        title: "FITrainingWithShobhit",
+        title: "FITraining\nWithShobhit",
         description:
           "Premium gym management platform featuring attendance tracking, workout plans, diet management, memberships, analytics, and an intuitive admin dashboard.",
         button: "View Project",
+        video: video2,
       },
       {
-        title: "Asthana Studio",
-        description:
-          "A creative agency website focused on immersive web experiences, premium animations, modern branding, and high-performance frontend development.",
-        button: "View Project",
-      },
-      {
-        title: "Interactive Portfolio",
+        title: "Interactive\nPortfolio",
         description:
           "A collection of experimental interfaces built with React, GSAP, Three.js, and modern web technologies to create engaging digital experiences.",
         button: "Explore",
+        video: video3,
       },
     ],
   };
 
   const mover = (val) => {
-    setPos(val * 20);
+    setActive(val);
   };
 
+  const rowHeight = 20; 
+  const videoHeight = 18; 
+  const offset = (rowHeight - videoHeight) / 2; 
+
+  const springConfig = { type: "spring", stiffness: 250, damping: 30, mass: 0.5 };
+
   return (
-    <div className="relative">
+    <div id="work" className="relative w-full">
       {sectionData.projects.map((val, idx) => (
         <Product key={idx} val={val} mover={mover} count={idx} />
       ))}
 
-      <div className="h-full absolute top-0 pointer-events-none left-[35%] translate-x-[-50%]">
+      <div className="absolute top-0 pointer-events-none w-full h-full z-0 hidden md:block">
         <motion.div
-          initial={{ y: `${pos}rem`, x: "50%" }}
-          animate={{ y: `${pos}rem` }}
-          transition={{
-            ease: [0.76, 0, 0.24, 1],
-            duration: 0.6,
-          }}
-          className="window w-80 h-80 overflow-hidden rounded-md"
+          initial={{ y: `${active * rowHeight + offset}rem` }}
+          animate={{ y: `${active * rowHeight + offset}rem` }}
+          transition={springConfig}
+          className="absolute left-[46%] -translate-x-1/2 w-lg h-72 overflow-hidden rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.6)] border border-slate-700/50 bg-[#161418]"
         >
           <motion.div
-            animate={{ y: `${-pos}rem` }}
-            transition={{ ease: [0.76, 0, 0.24, 1], duration: 0.6 }}
-            className="window w-80 h-80 bg-red-500"
+            animate={{ y: `-${active * videoHeight}rem` }}
+            transition={springConfig}
+            className="w-full flex flex-col"
           >
-            <img src={work1} alt="" />
-          </motion.div>
-
-          <motion.div
-            animate={{ y: `${-pos}rem` }}
-            transition={{ ease: [0.76, 0, 0.24, 1], duration: 0.6 }}
-            className="window w-80 h-80 bg-stone-500"
-          >
-            <img src={work2} alt="" />
-          </motion.div>
-
-          <motion.div
-            animate={{ y: `${-pos}rem` }}
-            transition={{ ease: [0.76, 0, 0.24, 1], duration: 0.6 }}
-            className="window w-80 h-80 bg-purple-500"
-          >
-            <img src={work3} alt="" />
-          </motion.div>
-
-          <motion.div
-            animate={{ y: `${-pos}rem` }}
-            transition={{ ease: [0.76, 0, 0.24, 1], duration: 0.6 }}
-            className="window w-80 h-80 bg-fuchsia-500"
-          >
-            <img src={work4} alt="" />
-          </motion.div>
-
-          <motion.div
-            animate={{ y: `${-pos}rem` }}
-            transition={{ ease: [0.76, 0, 0.24, 1], duration: 0.6 }}
-            className="window w-80 h-80 bg-yellow-300"
-          >
-            <img src={work5} alt="" />
+            {videosList.map((vid, index) => (
+              <div key={index} className="w-lg h-72 shrink-0">
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="w-full h-full object-cover scale-[1.02]"
+                  src={vid}
+                ></video>
+              </div>
+            ))}
           </motion.div>
         </motion.div>
       </div>
