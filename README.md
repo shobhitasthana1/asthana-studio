@@ -10,7 +10,7 @@ Crafting immersive web experiences with modern UI, cinematic animations, smooth 
 
 <p>
   <a href="https://asthana-studio.vercel.app">
-    <img src="https://img.shields.io/badge/Live-Demo-000000?style=for-the-badge&logo=vercel&logoColor=white" />
+    <img src="https://img.shields.io/badge/🌐_Live_Demo-000000?style=for-the-badge&logo=vercel&logoColor=white" />
   </a>
   <a href="https://github.com/shobhitasthana1/asthana-studio">
     <img src="https://img.shields.io/github/stars/shobhitasthana1/asthana-studio?style=for-the-badge" />
@@ -27,7 +27,7 @@ Crafting immersive web experiences with modern UI, cinematic animations, smooth 
   <img src="https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=white" />
   <img src="https://img.shields.io/badge/Vite-Latest-646CFF?style=for-the-badge&logo=vite&logoColor=white" />
   <img src="https://img.shields.io/badge/TailwindCSS-v4-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" />
-  <img src="https://img.shields.io/badge/Framer-Motion-000000?style=for-the-badge&logo=framer&logoColor=white" />
+  <img src="https://img.shields.io/badge/Framer_Motion-000000?style=for-the-badge&logo=framer&logoColor=white" />
   <img src="https://img.shields.io/badge/GSAP-88CE02?style=for-the-badge&logo=greensock&logoColor=black" />
 </p>
 
@@ -35,51 +35,55 @@ Crafting immersive web experiences with modern UI, cinematic animations, smooth 
 
 ---
 
-# 🌐 Live Website
+# 🎥 Project Preview
 
-### 🔗 https://asthana-studio.vercel.app/
+<div align="center">
 
----
+![Asthana Studio Preview](./Output.gif)
 
-# 🎥 Demo Video
+</div>
 
-GitHub does not reliably support embedded videos inside README files.
+<p align="center">
+Experience the premium animations, smooth interactions, and immersive UI directly in your browser.
+</p>
 
-You can watch the project showcase here:
+<div align="center">
 
-- **Output.mov** (Included in the repository)
+## 🌐 Live Website
 
-or download it directly from the repository.
+### https://asthana-studio.vercel.app/
+
+</div>
 
 ---
 
 # ✨ Features
 
-- 🎨 Premium agency-inspired UI/UX
-- 🌑 Luxury dark interface
-- ⚡ Built using React + Vite
-- 🚀 Performance-first architecture
-- 🎬 Cinematic loading animation
+- 🎨 Premium agency-inspired interface
+- 🌑 Luxury dark theme
+- ⚡ React + Vite architecture
+- 🚀 High-performance rendering
+- 🎬 Cinematic loading sequence
 - 🧲 Magnetic hover interactions
 - 🖱️ Custom animated cursor
 - 🌊 Smooth scrolling experience
 - 🎭 Framer Motion animations
 - 🔥 GSAP-powered transitions
-- ♾️ Infinite marquee animation
-- 💎 Reusable component architecture
+- ♾️ Infinite marquee animations
+- 💎 Modular reusable components
 - 📱 Fully responsive across all devices
-- ⚙️ Clean and scalable codebase
+- ⚙️ Clean and scalable architecture
 
 ---
 
-# 🛠️ Tech Stack
+# 🛠 Tech Stack
 
 | Category | Technology |
 |-----------|------------|
 | Frontend | React.js |
 | Build Tool | Vite |
 | Styling | Tailwind CSS |
-| Animation | Framer Motion |
+| Animations | Framer Motion |
 | Motion Library | GSAP |
 | Smooth Scroll | Lenis / Locomotive Scroll |
 | Icons | React Icons |
@@ -127,7 +131,7 @@ ASTHANA-STUDIO/
 ├── .gitignore
 ├── eslint.config.js
 ├── index.html
-├── Output.mov
+├── Output.gif
 ├── package.json
 ├── package-lock.json
 ├── README.md
@@ -145,37 +149,37 @@ ASTHANA-STUDIO/
 
 # 🚀 Installation
 
-### Clone Repository
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/shobhitasthana1/asthana-studio.git
 ```
 
-### Move into the Project
+### 2. Navigate into the Project
 
 ```bash
 cd asthana-studio
 ```
 
-### Install Dependencies
+### 3. Install Dependencies
 
 ```bash
 npm install
 ```
 
-### Start Development Server
+### 4. Start Development Server
 
 ```bash
 npm run dev
 ```
 
-### Build for Production
+### 5. Build for Production
 
 ```bash
 npm run build
 ```
 
-### Preview Production Build
+### 6. Preview Production Build
 
 ```bash
 npm run preview
@@ -187,29 +191,29 @@ npm run preview
 
 The project is deployed on **Vercel**.
 
-Live URL:
+### Live URL
 
-**https://asthana-studio.vercel.app/**
+https://asthana-studio.vercel.app/
 
 ---
 
 # 🎯 Design Philosophy
 
-Asthana Studio is a premium digital portfolio focused on delivering an immersive user experience through smooth motion, modern typography, elegant layouts, and carefully crafted interactions.
+Asthana Studio is a premium digital portfolio focused on delivering immersive user experiences through elegant motion design, modern typography, and carefully crafted interactions.
 
-The project draws inspiration from contemporary digital product design while maintaining its own visual identity and implementation.
+The project draws inspiration from contemporary digital experiences while maintaining its own visual identity and implementation.
 
 ---
 
 # 📈 Performance Highlights
 
-- Optimized rendering
-- GPU accelerated animations
-- Responsive layouts
-- Reusable components
-- Smooth scrolling
-- Lightweight architecture
-- Modern development workflow
+- ⚡ Optimized rendering
+- 🚀 GPU accelerated animations
+- 📱 Responsive layouts
+- ♻️ Reusable components
+- 🌊 Smooth scrolling
+- 📦 Lightweight architecture
+- 🛠 Modern development workflow
 
 ---
 
@@ -217,7 +221,7 @@ The project draws inspiration from contemporary digital product design while mai
 
 ## Shobhit Asthana
 
-Full Stack Developer passionate about creating premium digital experiences.
+Full Stack Developer passionate about building premium digital experiences.
 
 ### Connect with Me
 
@@ -229,9 +233,9 @@ Full Stack Developer passionate about creating premium digital experiences.
 
 ---
 
-# ⭐ Support
+# ⭐ Show Your Support
 
-If you enjoyed this project, consider giving it a ⭐ on GitHub.
+If you like this project, please consider giving it a ⭐ on GitHub.
 
 ```text
 ⭐ Star the Repository
@@ -252,8 +256,10 @@ All Rights Reserved.
 
 <div align="center">
 
-### Made with ❤️ by Shobhit Asthana
+## Thank You for Visiting ❤️
 
-**Building Premium Web Experiences**
+### Made with React, GSAP, Framer Motion & Tailwind CSS
+
+**Designed & Developed by Shobhit Asthana**
 
 </div>
