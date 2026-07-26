@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { motion, useScroll, useMotionValueEvent } from "framer-motion";
+import { motion, useScroll, useTransform, useMotionValueEvent } from "framer-motion"; 
 import work1 from "../assets/images/work1.png";
 import work2 from "../assets/images/work2.png";
 import work3 from "../assets/images/work3.png";
@@ -22,6 +22,12 @@ const Work = () => {
   ]);
 
   const { scrollYProgress } = useScroll();
+  const y1 = useTransform(scrollYProgress, [0, 1], [0, -40]);
+  const y2 = useTransform(scrollYProgress, [0, 1], [0, -70]);
+  const y3 = useTransform(scrollYProgress, [0, 1], [0, -100]);
+  const y4 = useTransform(scrollYProgress, [0, 1], [0, -130]);
+
+  const parallaxY = [y1, y2, y3, y4, y1, y2, y3, y4];
 
   useMotionValueEvent(scrollYProgress, "change", (data) => {
     function imgShow(arr) {
@@ -29,8 +35,8 @@ const Work = () => {
         prev.map((item, index) =>
           arr.indexOf(index) === -1
             ? { ...item, isActive: false }
-            : { ...item, isActive: true }
-        )
+            : { ...item, isActive: true },
+        ),
       );
     }
 
@@ -71,28 +77,56 @@ const Work = () => {
     }
   });
 
+  const text = "WORK";
+
   return (
     <div className="w-full overflow-x-clip">
       <div className="relative max-w-7xl mx-auto flex items-center justify-center min-h-30 sm:min-h-37.5 md:min-h-auto py-6 md:py-0">
-        <h1 className="font-impasse text-[22vw] font-black select-none text-white tracking-wide">
-          WORK
-        </h1>
+        
+        {/* NAYA TYPEWRITER EFFECT */}
+        <motion.h1 
+          className="font-impasse text-[22vw] font-black select-none text-white tracking-wide flex"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-10%" }} // Screen me aate hi chalega
+          variants={{
+            hidden: { opacity: 1 },
+            visible: {
+              opacity: 1,
+              transition: {
+                staggerChildren: 0.15, // Har letter ke aane ke beech ka gap
+              },
+            },
+          }}
+        >
+          {text.split("").map((char, index) => (
+            <motion.span
+              key={index}
+              variants={{
+                hidden: { opacity: 0, display: "none" },
+                visible: { opacity: 1, display: "block" }, // Ek-ek karke appear honge
+              }}
+            >
+              {char}
+            </motion.span>
+          ))}
+        </motion.h1>
 
         <div className="absolute inset-0 w-full h-full pointer-events-none">
           {images.map(
             (img, idx) =>
               img.isActive && (
-                <img
+                <motion.img
                   key={idx}
                   src={img.url}
-                  alt="Work Project"
                   style={{
                     top: img.top,
                     left: img.left,
+                    y: parallaxY[idx],
                   }}
                   className="absolute w-14 sm:w-20 md:w-32 xl:w-50 rounded-md shadow-2xl -translate-x-1/2 -translate-y-1/2 transition-all duration-300 ease-out"
                 />
-              )
+              ),
           )}
         </div>
       </div>
