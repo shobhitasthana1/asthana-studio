@@ -2,64 +2,84 @@
 
 <div align="center">
 
-# ASTHANA STUDIO
+<h1>ASTHANA STUDIO</h1>
 
-### A Premium Digital Studio & Interactive Portfolio Experience
+### Premium Digital Studio & Interactive Portfolio
 
 Crafting immersive web experiences with modern UI, cinematic animations, smooth interactions, and performance-first development.
 
 <p>
-  <img src="https://img.shields.io/badge/React-19-blue?style=for-the-badge&logo=react" />
-  <img src="https://img.shields.io/badge/Vite-Latest-purple?style=for-the-badge&logo=vite" />
-  <img src="https://img.shields.io/badge/TailwindCSS-4-38BDF8?style=for-the-badge&logo=tailwindcss" />
-  <img src="https://img.shields.io/badge/Framer%20Motion-Animations-black?style=for-the-badge&logo=framer" />
-  <img src="https://img.shields.io/badge/GSAP-Premium-88CE02?style=for-the-badge&logo=greensock" />
+  <a href="https://asthana-studio.vercel.app">
+    <img src="https://img.shields.io/badge/Live-Demo-000000?style=for-the-badge&logo=vercel&logoColor=white" />
+  </a>
+  <a href="https://github.com/shobhitasthana1/asthana-studio">
+    <img src="https://img.shields.io/github/stars/shobhitasthana1/asthana-studio?style=for-the-badge" />
+  </a>
+  <a href="https://github.com/shobhitasthana1/asthana-studio/network/members">
+    <img src="https://img.shields.io/github/forks/shobhitasthana1/asthana-studio?style=for-the-badge" />
+  </a>
+  <a href="https://github.com/shobhitasthana1/asthana-studio/issues">
+    <img src="https://img.shields.io/github/issues/shobhitasthana1/asthana-studio?style=for-the-badge" />
+  </a>
+</p>
+
+<p>
+  <img src="https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=white" />
+  <img src="https://img.shields.io/badge/Vite-Latest-646CFF?style=for-the-badge&logo=vite&logoColor=white" />
+  <img src="https://img.shields.io/badge/TailwindCSS-v4-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" />
+  <img src="https://img.shields.io/badge/Framer-Motion-000000?style=for-the-badge&logo=framer&logoColor=white" />
+  <img src="https://img.shields.io/badge/GSAP-88CE02?style=for-the-badge&logo=greensock&logoColor=black" />
 </p>
 
 </div>
 
 ---
 
-# 🎥 Project Preview
+# 🌐 Live Website
 
-> **Interactive Portfolio Experience**
+### 🔗 https://asthana-studio.vercel.app/
 
-<div align="center">
+---
 
-<video src="./Output.mov" width="100%" controls autoplay loop muted></video>
+# 🎥 Demo Video
 
-</div>
+GitHub does not reliably support embedded videos inside README files.
 
-> If GitHub doesn't display the video, download or open **Output.mov** from the repository.
+You can watch the project showcase here:
+
+- **Output.mov** (Included in the repository)
+
+or download it directly from the repository.
 
 ---
 
 # ✨ Features
 
 - 🎨 Premium agency-inspired UI/UX
-- ⚡ Lightning-fast React + Vite architecture
-- 🎬 Cinematic page transitions
+- 🌑 Luxury dark interface
+- ⚡ Built using React + Vite
+- 🚀 Performance-first architecture
+- 🎬 Cinematic loading animation
 - 🧲 Magnetic hover interactions
 - 🖱️ Custom animated cursor
 - 🌊 Smooth scrolling experience
 - 🎭 Framer Motion animations
-- 🚀 GSAP powered micro-interactions
-- 🔥 Infinite marquee animations
-- 📱 Fully responsive design
-- 🌙 Luxury dark aesthetic
-- ⚙️ Modular reusable components
-- 💎 Performance optimized
+- 🔥 GSAP-powered transitions
+- ♾️ Infinite marquee animation
+- 💎 Reusable component architecture
+- 📱 Fully responsive across all devices
+- ⚙️ Clean and scalable codebase
 
 ---
 
-# 🛠 Tech Stack
+# 🛠️ Tech Stack
 
 | Category | Technology |
 |-----------|------------|
 | Frontend | React.js |
 | Build Tool | Vite |
 | Styling | Tailwind CSS |
-| Animations | Framer Motion |
+| Animation | Framer Motion |
 | Motion Library | GSAP |
 | Smooth Scroll | Lenis / Locomotive Scroll |
 | Icons | React Icons |
@@ -67,13 +87,11 @@ Crafting immersive web experiences with modern UI, cinematic animations, smooth 
 
 ---
 
-# 📂 Folder Structure
+# 📁 Project Structure
 
 ```text
 ASTHANA-STUDIO/
 │
-├── dist/
-├── node_modules/
 ├── public/
 │
 ├── src/
@@ -118,49 +136,46 @@ ASTHANA-STUDIO/
 
 ---
 
-# ⚙️ Getting Started
+# ⚙️ Requirements
 
-## 1️⃣ Clone Repository
+- Node.js 18+
+- npm
+
+---
+
+# 🚀 Installation
+
+### Clone Repository
 
 ```bash
 git clone https://github.com/shobhitasthana1/asthana-studio.git
 ```
 
----
-
-## 2️⃣ Move into Project
+### Move into the Project
 
 ```bash
 cd asthana-studio
 ```
 
----
-
-## 3️⃣ Install Dependencies
+### Install Dependencies
 
 ```bash
 npm install
 ```
 
----
-
-## 4️⃣ Run Development Server
+### Start Development Server
 
 ```bash
 npm run dev
 ```
 
----
-
-## 5️⃣ Create Production Build
+### Build for Production
 
 ```bash
 npm run build
 ```
 
----
-
-## 6️⃣ Preview Production Build
+### Preview Production Build
 
 ```bash
 npm run preview
@@ -168,59 +183,33 @@ npm run preview
 
 ---
 
-# 🌐 Live Demo
+# 🌍 Deployment
 
-### 🔗 https://asthana-studio.vercel.app
+The project is deployed on **Vercel**.
 
----
+Live URL:
 
-# 📸 Screenshots
-
-> Add screenshots inside the `README/assets` folder.
-
-```
-README
- └── assets
-      ├── hero.png
-      ├── work.png
-      ├── services.png
-      └── footer.png
-```
-
-Example:
-
-```md
-![Hero](README/assets/hero.png)
-
-![Projects](README/assets/work.png)
-```
+**https://asthana-studio.vercel.app/**
 
 ---
 
-# 🚀 Performance
+# 🎯 Design Philosophy
 
-- Optimized asset loading
-- Lazy rendering
+Asthana Studio is a premium digital portfolio focused on delivering an immersive user experience through smooth motion, modern typography, elegant layouts, and carefully crafted interactions.
+
+The project draws inspiration from contemporary digital product design while maintaining its own visual identity and implementation.
+
+---
+
+# 📈 Performance Highlights
+
+- Optimized rendering
 - GPU accelerated animations
-- Responsive images
+- Responsive layouts
+- Reusable components
 - Smooth scrolling
-- Modular architecture
-- Clean reusable components
-
----
-
-# 🎯 Inspiration
-
-This project takes inspiration from modern digital agencies and award-winning experiences while maintaining its own visual identity.
-
-Inspired by:
-
-- Awwwards
-- Locomotive
-- Linear
-- Vercel
-- Apple
-- Stripe
+- Lightweight architecture
+- Modern development workflow
 
 ---
 
@@ -228,40 +217,42 @@ Inspired by:
 
 ## Shobhit Asthana
 
-Full Stack Developer passionate about creating modern digital experiences.
+Full Stack Developer passionate about creating premium digital experiences.
 
-### Connect with me
+### Connect with Me
 
-- 🌐 Portfolio: https://asthana-studio.vercel.app
-- 💼 LinkedIn: https://www.linkedin.com/in/shobhit-asthana/
+- 🌐 Portfolio: https://asthana-studio.vercel.app/
 - 💻 GitHub: https://github.com/shobhitasthana1
+- 💼 LinkedIn: https://www.linkedin.com/in/shobhit-asthana/
 - 🐦 X (Twitter): https://x.com/ShobhitAsthanaa
 - 📷 Instagram: https://www.instagram.com/shobhit_asthana_/
 
 ---
 
-# ⭐ Show Your Support
+# ⭐ Support
 
 If you enjoyed this project, consider giving it a ⭐ on GitHub.
 
-```bash
-⭐ Star the repository
-🍴 Fork the project
-🐛 Report issues
-🚀 Share with others
+```text
+⭐ Star the Repository
+🍴 Fork the Project
+🐛 Report Issues
+🚀 Share with Others
 ```
 
 ---
 
 # 📄 License
 
-This project is licensed under the **MIT License**.
+Copyright © 2026 Shobhit Asthana.
+
+All Rights Reserved.
 
 ---
 
 <div align="center">
 
-## Made with ❤️ by Shobhit Asthana
+### Made with ❤️ by Shobhit Asthana
 
 **Building Premium Web Experiences**
 
