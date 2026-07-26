@@ -94,7 +94,7 @@ const Work = () => {
             visible: {
               opacity: 1,
               transition: {
-                staggerChildren: 0.15, // Har letter ke aane ke beech ka gap
+                staggerChildren: 0.40, // Har letter ke aane ke beech ka gap
               },
             },
           }}

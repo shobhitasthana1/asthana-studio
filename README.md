@@ -1,87 +1,158 @@
 # 🚀 Asthana Studio
 
-A modern, premium portfolio website built with React, featuring immersive animations, smooth scrolling, and interactive UI. Inspired by award-winning agency experiences while maintaining a unique visual identity.
+<div align="center">
 
-![Asthana Studio Preview](./preview.png)
+# ASTHANA STUDIO
 
-## ✨ Features
+### A Premium Digital Studio & Interactive Portfolio Experience
 
-- Modern Agency Portfolio UI
-- Smooth Page Transitions
-- Interactive GSAP Animations
-- Framer Motion Animations
-- Locomotive Scroll Integration
-- Custom Cursor Effects
-- Responsive Design
-- Project Showcase
-- Premium Dark Theme
-- Hover Interactions
-- Marquee Text Animations
-- Gooey Morph Effects
-- Modern Footer & CTA Section
+Crafting immersive web experiences with modern UI, cinematic animations, smooth interactions, and performance-first development.
+
+<p>
+  <img src="https://img.shields.io/badge/React-19-blue?style=for-the-badge&logo=react" />
+  <img src="https://img.shields.io/badge/Vite-Latest-purple?style=for-the-badge&logo=vite" />
+  <img src="https://img.shields.io/badge/TailwindCSS-4-38BDF8?style=for-the-badge&logo=tailwindcss" />
+  <img src="https://img.shields.io/badge/Framer%20Motion-Animations-black?style=for-the-badge&logo=framer" />
+  <img src="https://img.shields.io/badge/GSAP-Premium-88CE02?style=for-the-badge&logo=greensock" />
+</p>
+
+</div>
 
 ---
 
-## 🛠 Tech Stack
+# 🎥 Project Preview
 
-- ⚛️ React.js
-- 🎨 Tailwind CSS
-- 🎬 GSAP
-- 🎥 Framer Motion
-- 🚂 Locomotive Scroll
-- ⚡ Vite
-- 💻 JavaScript (ES6+)
-- 🌐 HTML5
-- 🎨 CSS3
+> **Interactive Portfolio Experience**
+
+<div align="center">
+
+<video src="./Output.mov" width="100%" controls autoplay loop muted></video>
+
+</div>
+
+> If GitHub doesn't display the video, download or open **Output.mov** from the repository.
 
 ---
 
-## 📂 Project Structure
+# ✨ Features
 
-```bash
-Asthana-Studio/
+- 🎨 Premium agency-inspired UI/UX
+- ⚡ Lightning-fast React + Vite architecture
+- 🎬 Cinematic page transitions
+- 🧲 Magnetic hover interactions
+- 🖱️ Custom animated cursor
+- 🌊 Smooth scrolling experience
+- 🎭 Framer Motion animations
+- 🚀 GSAP powered micro-interactions
+- 🔥 Infinite marquee animations
+- 📱 Fully responsive design
+- 🌙 Luxury dark aesthetic
+- ⚙️ Modular reusable components
+- 💎 Performance optimized
+
+---
+
+# 🛠 Tech Stack
+
+| Category | Technology |
+|-----------|------------|
+| Frontend | React.js |
+| Build Tool | Vite |
+| Styling | Tailwind CSS |
+| Animations | Framer Motion |
+| Motion Library | GSAP |
+| Smooth Scroll | Lenis / Locomotive Scroll |
+| Icons | React Icons |
+| Language | JavaScript (ES6+) |
+
+---
+
+# 📂 Folder Structure
+
+```text
+ASTHANA-STUDIO/
 │
+├── dist/
+├── node_modules/
 ├── public/
+│
 ├── src/
+│   │
 │   ├── assets/
+│   │   ├── fonts/
+│   │   ├── images/
+│   │   ├── videos/
+│   │   ├── react.svg
+│   │   └── vite.svg
+│   │
 │   ├── components/
-│   ├── pages/
+│   │   ├── Button.jsx
+│   │   ├── Card.jsx
+│   │   ├── Cards.jsx
+│   │   ├── CustomCursor.jsx
+│   │   ├── Footer.jsx
+│   │   ├── Loader.jsx
+│   │   ├── Marquee.jsx
+│   │   ├── Marquees.jsx
+│   │   ├── Navbar.jsx
+│   │   ├── Product.jsx
+│   │   ├── Products.jsx
+│   │   ├── Stripe.jsx
+│   │   ├── Stripes.jsx
+│   │   └── Work.jsx
+│   │
+│   ├── App.css
 │   ├── App.jsx
+│   ├── index.css
 │   └── main.jsx
 │
+├── .gitignore
+├── eslint.config.js
+├── index.html
+├── Output.mov
 ├── package.json
-└── README.md
+├── package-lock.json
+├── README.md
+└── vite.config.js
 ```
 
 ---
 
-## ⚙️ Installation
+# ⚙️ Getting Started
 
-Clone the repository
+## 1️⃣ Clone Repository
 
 ```bash
-git clone https://github.com/your-username/asthana-studio.git
+git clone https://github.com/shobhitasthana1/asthana-studio.git
 ```
 
-Go to the project directory
+---
+
+## 2️⃣ Move into Project
 
 ```bash
 cd asthana-studio
 ```
 
-Install dependencies
+---
+
+## 3️⃣ Install Dependencies
 
 ```bash
 npm install
 ```
 
-Start the development server
+---
+
+## 4️⃣ Run Development Server
 
 ```bash
 npm run dev
 ```
 
-Build for production
+---
+
+## 5️⃣ Create Production Build
 
 ```bash
 npm run build
@@ -89,55 +160,109 @@ npm run build
 
 ---
 
-## 🎯 Highlights
+## 6️⃣ Preview Production Build
 
-- Premium UI/UX Design
-- Pixel Perfect Layout
-- Smooth Animations
-- High Performance
-- Interactive Experience
-- Modern Typography
-- Clean Component Structure
-- Optimized Assets
-
----
-
-## 📸 Screenshots
-
-Add your project screenshots here.
-
-```
-/screenshots
+```bash
+npm run preview
 ```
 
 ---
 
-## 🌐 Live Demo
+# 🌐 Live Demo
 
-🔗 https://asthana-studio.vercel.app
-
----
-
-## 👨‍💻 Author
-
-**Shobhit Asthana**
-
-- GitHub: https://github.com/shobhitasthana1
-- LinkedIn: https://linkedin.com/in/shobhit-asthana
-- Portfolio: https://asthana-studio.vercel.app
+### 🔗 https://asthana-studio.vercel.app
 
 ---
 
-## ⭐ Support
+# 📸 Screenshots
 
-If you like this project, consider giving it a ⭐ on GitHub.
+> Add screenshots inside the `README/assets` folder.
+
+```
+README
+ └── assets
+      ├── hero.png
+      ├── work.png
+      ├── services.png
+      └── footer.png
+```
+
+Example:
+
+```md
+![Hero](README/assets/hero.png)
+
+![Projects](README/assets/work.png)
+```
 
 ---
 
-## 📄 License
+# 🚀 Performance
 
-This project is licensed under the MIT License.
+- Optimized asset loading
+- Lazy rendering
+- GPU accelerated animations
+- Responsive images
+- Smooth scrolling
+- Modular architecture
+- Clean reusable components
 
 ---
 
-### Made with ❤️ by Shobhit Asthana
+# 🎯 Inspiration
+
+This project takes inspiration from modern digital agencies and award-winning experiences while maintaining its own visual identity.
+
+Inspired by:
+
+- Awwwards
+- Locomotive
+- Linear
+- Vercel
+- Apple
+- Stripe
+
+---
+
+# 👨‍💻 Author
+
+## Shobhit Asthana
+
+Full Stack Developer passionate about creating modern digital experiences.
+
+### Connect with me
+
+- 🌐 Portfolio: https://asthana-studio.vercel.app
+- 💼 LinkedIn: https://www.linkedin.com/in/shobhit-asthana/
+- 💻 GitHub: https://github.com/shobhitasthana1
+- 🐦 X (Twitter): https://x.com/ShobhitAsthanaa
+- 📷 Instagram: https://www.instagram.com/shobhit_asthana_/
+
+---
+
+# ⭐ Show Your Support
+
+If you enjoyed this project, consider giving it a ⭐ on GitHub.
+
+```bash
+⭐ Star the repository
+🍴 Fork the project
+🐛 Report issues
+🚀 Share with others
+```
+
+---
+
+# 📄 License
+
+This project is licensed under the **MIT License**.
+
+---
+
+<div align="center">
+
+## Made with ❤️ by Shobhit Asthana
+
+**Building Premium Web Experiences**
+
+</div>

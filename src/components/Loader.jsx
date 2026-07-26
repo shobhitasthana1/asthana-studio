@@ -25,7 +25,7 @@ const Loader = () => {
         className="w-40 md:w-64 h-0.5 bg-slate-800 rounded-full overflow-hidden mt-4"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 0.5 }}
+        transition={{ delay: 0.1 }}
       >
         <motion.div 
           className="h-full bg-studio-neon"
