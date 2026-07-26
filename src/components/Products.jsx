@@ -38,12 +38,6 @@ const Products = () => {
         button: "View Project",
       },
       {
-        title: "Customer Segmentation",
-        description:
-          "Interactive analytics dashboard for visualizing customer behavior, segmentation insights, business metrics, and data-driven decision making.",
-        button: "View Project",
-      },
-      {
         title: "Interactive Portfolio",
         description:
           "A collection of experimental interfaces built with React, GSAP, Three.js, and modern web technologies to create engaging digital experiences.",
