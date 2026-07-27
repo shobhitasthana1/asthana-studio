@@ -42,14 +42,7 @@ const Footer = () => {
             <h4 className="text-zinc-500 text-sm mb-8">Socials</h4>
 
             <div className="flex flex-col gap-4 text-zinc-400">
-              <a
-                href="https://github.com/shobhitasthana1"
-                target="_blank"
-                rel="noreferrer"
-                className="hover:text-white transition-all duration-300 hover:translate-x-1.5 w-max inline-block"
-              >
-                GitHub
-              </a>
+             
 
               <a
                 href="https://github.com/shobhitasthana1"
